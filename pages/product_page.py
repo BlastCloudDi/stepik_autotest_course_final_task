@@ -10,7 +10,6 @@ class ProductPage(BasePage):
         self.should_be_product_name()
         self.should_be_product_cost()
 
-
     def should_be_product_name(self):
         product_name = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME).text
         product_name_in_basket = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME_IN_BASKET).text
